@@ -1,0 +1,29 @@
+version: "3.8"
+services:
+  goapp:
+    build: # ビルドに使うDockerファイルのパス
+      context: ./
+      dockerfile: ./Dockerfile
+    container_name: sample_docker_go_grpc_graphql
+    # working_dir: /go/src
+    stdin_open: true # 標準入出力とエラー出力をコンテナdockeに結びつける設定
+    tty: true # 擬似端末(キーボードによる入力)をコンテナに結びつける設定
+    # ports:
+    #   - ${BACK_PORT}:${BACK_PORT} # api 立てた時に使えるように
+    #   - 2346:2346 # delve(debug)用
+    environment:
+      # - BACK_PORT
+      # - BACK_LOG_DIRPATH
+      # - BACK_LOG_FILENAME
+      # - DBMS
+      # - DB_ROOT_PASSWORD
+      # - DB_DATABASE
+      # - DB_USER
+      # - DB_PASSWORD
+      # - DB_PORT
+      - TZ # 日本時間
+    volumes:
+      - ./article:/article  # ソースディレクトリ マウント先
+      # - ./logs/back:/src/logs # ログディレクトリ マウント先
+    # depends_on:
+    #   - db
