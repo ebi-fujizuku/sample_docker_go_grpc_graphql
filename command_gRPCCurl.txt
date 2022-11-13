@@ -1,0 +1,2 @@
+// 05段階:確認
+grpcurl -plaintext -d '{"articleInput": "aaa"}' localhost:8080 article.ArticleService.CreateArticle
