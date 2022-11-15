@@ -9,9 +9,9 @@
 + [作ってわかる！ はじめてのgRPC](https://zenn.dev/hsaki/books/golang-grpc-starting)
 	+ Stepごとに作れるのでよくわかりやすかった。
 ## 現在状況
-	grpcまでしかやってません。GraphQLはそのうち。
+grpcまでしかやってません。GraphQLはそのうち。
 ## 宣伝
-	下記の配信で作っていたものです。
+下記の配信で作っていたものです。
 + [【#勉強】プログラミング gRPCを学ぶんだ！#10【新人 Vtuber】ローカルで動いたし、Dockerで動かそー](https://youtu.be/-Biu6rp5MFA)
 + [【#勉強】プログラミング gRPCを学ぶんだ！#10【新人 Vtuber】Dockerで動いたし、デバッグ方法さがそう](https://youtu.be/P82WpfsDddo)
 
