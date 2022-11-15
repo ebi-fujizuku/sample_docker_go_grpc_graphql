@@ -18,5 +18,13 @@
       "mode": "auto",
       "program": "${workspaceFolder}/article/client"
     },
+    {
+      "name": "Docker_Server",
+      "type": "go",
+      "request": "launch",
+      "mode": "debug",
+      "program": "${workspaceFolder}/article/server",
+      "showLog": true,
+    },
   ]
 }
